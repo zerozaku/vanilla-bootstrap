@@ -33,12 +33,6 @@ Compiles all theme assets using Gulp. LESS stylesheets will be compiled to [`des
 #### Watch - `npm run watch`
 Watches the assets for changes and runs the appropriate Gulp tasks. Also starts a Livereload server that will push the changes to your Vanilla installation automatically.
 
-## [Issue tracking](https://github.com/metazaku/vanilla-bootstrap/issues)
-
-If you come across any bugs or if you have a feature request, please file an issue using the GitHub Issue tracker. Bootstrap for Vanilla won't be supported through http://vanillaforums.org so please stick to using GitHub for inquiries about bugs and feature requests. Thanks!
-
-[__File a new issue or feature request__](https://github.com/metazaku/vanilla-bootstrap/issues/new)
-
 ---
 
 Copyright &copy; 2014 [Kasper Kronborg Isager](https://github.com/kasperisager). Licensed under the terms of the [MIT License](LICENSE.md)
