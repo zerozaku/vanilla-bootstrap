@@ -7,6 +7,7 @@ This is a fork of kasperisager's [Vanilla Bootstrap](https://github.com/kasperis
 ![Default](design/screenshot_default.png)
 ![Bootstrap](design/screenshot_bootstrap.png)
 ![Cosmo](design/screenshot_cosmo.png)
+![Darkly](design/screenshot_darkly.png)
 
 ## Compiling assets
 
