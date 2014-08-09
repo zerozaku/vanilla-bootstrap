@@ -22,8 +22,7 @@
     "bootstrap-social": "4.5.1",
     "bootswatch": "3.2.x",
     "font-awesome": "4.1.0",
-    "spin.js": "2.0.1",
-    "jquery-icheck": "2.x-beta"
+    "spin.js": "2.0.1"
   },
   "overrides": {
     "bootstrap-social": {
@@ -34,9 +33,6 @@
     },
     "jquery": {
       "main": []
-    },
-    "jquery-icheck": {
-      "main": "icheck.js"
     },
     "spin.js": {
       "main": [

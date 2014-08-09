@@ -1,18 +1,6 @@
 ;(function ($, window, document, undefined) {
   'use strict';
 
-  window.icheck = {
-    autoInit: false
-  , autoAjax: false
-  };
-
-  $(document).on('ready ajaxSuccess', function () {
-
-    // Initialize or re-initialize iCheck
-    $('input:not(.icheck-input)').icheck();
-
-  });
-
   $(function () {
 
     // Programmatically hide buttons that are supposed to be hidden. This
