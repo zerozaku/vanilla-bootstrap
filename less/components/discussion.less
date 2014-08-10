@@ -45,6 +45,7 @@
       .DataList &,
       .DataTable & {
         color: mix(@list-group-bg, @text-color);
+        margin-top: @meta-discussion-top;
       }
 
       // When used in dropdowns, make the meta color a mix of the dropdown bg
@@ -69,6 +70,10 @@
 
   .Meta {
     .MItem {
+      &.LastCommentBy a {
+        color: @text-color;
+      }
+
       &.Category a {
         &:extend(.label);
         &:extend(.label-default);
