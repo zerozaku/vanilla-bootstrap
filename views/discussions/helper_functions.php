@@ -147,6 +147,11 @@ function WriteDiscussion($Discussion, &$Sender, &$Session) {
       ?>
    </span>
    <div class="ItemContent Discussion">
+      <div class="ThreadAuthor">
+      <?php
+         echo UserPhoto($First, array('Size' => 'Medium'));
+      ?>
+      </div>
       <div class="Title">
       <?php 
          echo AdminCheck($Discussion, array('', ' ')).
