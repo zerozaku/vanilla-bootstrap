@@ -7,7 +7,7 @@
   </head>
   <body id="{$BodyID}" class="{$BodyClass} sticky-footer-body">
 
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
 
         <div class="navbar-header">
