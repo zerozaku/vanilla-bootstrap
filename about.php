@@ -14,7 +14,6 @@ $ThemeInfo['bootstrap'] = array(
   'Options' => array(
     'Styles' => array(
       'Default'   => '%s_default',
-      'Zerozaku'  => '%s_zerozaku',
       'Bootstrap' => '%s_bootstrap',
       'Cosmo'     => '%s_cosmo',
       'Darkly'    => '%s_darkly',

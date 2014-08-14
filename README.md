@@ -2,13 +2,6 @@
 
 This is a fork of kasperisager's [Vanilla Bootstrap](https://github.com/kasperisager/vanilla-bootstrap) theme. It's probably in your best interest to use the original because ours is tailored to our specific use-case, and we aren't supporting other use-cases. You're free to use it anyway, but you should expect to run into problems.
 
-## Included themes
-
-![Default](design/screenshot_default.png)
-![Bootstrap](design/screenshot_bootstrap.png)
-![Cosmo](design/screenshot_cosmo.png)
-![Darkly](design/screenshot_darkly.png)
-
 ## Compiling assets
 
 The following instructions assume that you have already installed Node.js on your computer. If this is not the case, please download and install the latest stable release from the official [Node.js download page](http://nodejs.org/download/). If you are using [Homebrew](http://brew.sh/), you can also install Node.js via the command line:
