@@ -103,9 +103,6 @@ function WriteDiscussion($Discussion, &$Sender, &$Session) {
    $DiscussionUrl = $Discussion->Url;
    $Category = CategoryModel::Categories($Discussion->CategoryID);
    
-   if ($Session->UserID)
-      $DiscussionUrl .= '#latest';
-   
    $Sender->EventArguments['DiscussionUrl'] = &$DiscussionUrl;
    $Sender->EventArguments['Discussion'] = &$Discussion;
    $Sender->EventArguments['CssClass'] = &$CssClass;
@@ -130,6 +127,10 @@ function WriteDiscussion($Discussion, &$Sender, &$Session) {
       $FirstDiscussion = FALSE;
       
    $Discussion->CountPages = ceil($Discussion->CountComments / $Sender->CountCommentsPerPage);
+
+   if ($Session->UserID && $Discussion->CountPages > 1) {
+      $DiscussionUrl .= '#latest';
+   }
 ?>
 <li id="Discussion_<?php echo $Discussion->DiscussionID; ?>" class="<?php echo $CssClass; ?>">
    <?php
