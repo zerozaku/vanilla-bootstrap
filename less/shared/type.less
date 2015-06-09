@@ -44,12 +44,14 @@
 }
 
 h1.H,
-.HomepageTitle,
 .PageTitle {
   &:extend(.page-header);
 }
 
-h1.H,
-.HomepageTitle {
+h1.H {
   padding-bottom: (((@line-height-computed / 2) - 1) + (@line-height-computed / 2));
+}
+
+.HomepageTitle {
+  display: none;
 }
