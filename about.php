@@ -17,6 +17,7 @@ $ThemeInfo['bootstrap'] = array(
       'Bootstrap' => '%s_bootstrap',
       'Cosmo'     => '%s_cosmo',
       'Darkly'    => '%s_darkly',
+      'Red Darkly'    => '%s_red-darkly'
     )
   )
 );

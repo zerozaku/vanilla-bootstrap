@@ -3,6 +3,21 @@
 //
 // No styleguide reference.
 
+.badge {
+  display: inline-block;
+  min-width: 30px;
+  padding: 3px 7px;
+  font-size: @font-size-small;
+  font-weight: @badge-font-weight;
+  color: @badge-color;
+  line-height: @badge-line-height;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: @badge-bg;
+  border-radius: @badge-border-radius;
+}
+
 .Count,
 .Alert {
   &:extend(.badge);
