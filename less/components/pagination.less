@@ -19,13 +19,15 @@
   }
 }
 
-.NumberedPager {
-  &:extend(.pagination);
-
+.PageControls .NumberedPager {
   @media (max-width: @container-phone) {
     margin-bottom: 10px;
     float: left !important;
   }
+}
+
+.NumberedPager {
+  &:extend(.pagination);
 
   > a,
   > span,
