@@ -9,11 +9,23 @@
     > span {
       padding :10px;
     }
+
+    @media (max-width: @container-phone) {
+      > a,
+      > span {
+        padding: 6px;
+      }
+    }
   }
 }
 
 .NumberedPager {
   &:extend(.pagination);
+
+  @media (max-width: @container-phone) {
+    margin-bottom: 10px;
+    float: left !important;
+  }
 
   > a,
   > span,

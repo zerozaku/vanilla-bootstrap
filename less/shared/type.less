@@ -30,7 +30,7 @@
     margin-top: 0 !important;
   }
   > *:last-child {
-    margin-bottom: 0 !important;
+    margin-bottom: 0; // removed !important
   }
 
   img {
@@ -59,4 +59,7 @@ h1.H {
 // Blockquotes
 blockquote {
   font-size: @blockquote-font-size;
+  margin: 0px 0px 10px;
+  background-color: #222;
+  padding: 15px 22px;
 }
