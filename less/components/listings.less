@@ -292,10 +292,19 @@
   &:extend(.panel);
   &:extend(.panel-default);
 
+  border-radius: 0px;
+
   .H {
-    &:extend(.panel-heading);
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-radius: 0px;
+
     &:extend(.panel-default > .panel-heading);
     &:extend(.panel-title);
+
+    a {
+      color: #FFF;
+    }
   }
 }
 
@@ -327,7 +336,10 @@
   }
 
   .MorePager {
-    &:extend(.panel-footer);
+    padding: 10px 15px;
+    background-color: #1D1D1D;
+    border-top: 1px solid #464545;
+    border-radius: 0px;
   }
 }
 
