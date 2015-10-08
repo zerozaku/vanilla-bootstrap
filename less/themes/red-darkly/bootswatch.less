@@ -70,10 +70,22 @@
 
 .PreviewButton {
   background-color: @brand-danger;
+  border: 1px solid @brand-danger;
+}
+
+.PreviewButton:hover {
+  background-color: darken(@brand-danger, 10%);
+  border: 1px solid darken(@brand-danger, 10%);
 }
 
 .DraftButton {
   background-color: @brand-info;
+  border: 1px solid @brand-info;
+}
+
+.DraftButton:hover {
+  background-color: darken(@brand-info, 10%);
+  border: 1px solid darken(@brand-info, 10%);
 }
 
 // Typography =================================================================
@@ -143,9 +155,21 @@ table,
 }
 
 // Forms ======================================================================
-.SearchForm {
+.search-form {
   background-color: transparent;
 }
+
+.MessageForm {
+  margin-bottom: 30px;
+  
+  .Buttons {
+    border-radius: 0px;
+    background-color: #1D1D1D;
+    padding: 15px;
+  }
+}
+
+
 
 input,
 textarea {
