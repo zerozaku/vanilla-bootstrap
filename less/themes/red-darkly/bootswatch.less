@@ -178,8 +178,6 @@ table,
   }
 }
 
-
-
 input,
 textarea {
   color: @input-color;
@@ -357,4 +355,38 @@ textarea {
       padding: 10px;
     }
   }
+}
+
+// Activity feed ===============================================================
+.DataList.Activities {
+  li {
+    &:first-child, &:last-child {
+      border-radius: 0;
+    }
+  }
+
+  .CommentForm:last-child {
+    border-radius: 0;
+    background-color: @gray-darker;
+  }
+}
+
+.DataList .ActivityComments {
+  margin-top:15px;
+
+  li, li:hover {
+    background-color: @gray;
+    border-color: transparent;
+  }
+
+  li {
+    &:first-child {
+      border-radius: 0;
+    }
+  }
+}
+
+.PrevNextPager a {
+  border-radius: 0;
+  color: #FFF;
 }
