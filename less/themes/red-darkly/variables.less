@@ -15,9 +15,10 @@
 
 @brand-primary:         #9E3232; // old blue default: #375a7f;
 @brand-success:         #9F2D2D; // main red
+@brand-save:            #66905B; // added this in as a green placeholder
 @brand-info:            #316C93; // includes announcement color
 @brand-warning:         #F39C12;
-@brand-danger:          #D75244; // old orange default: #E74C3C;
+@brand-danger:          #C84F42; // old orange default: #E74C3C;
 
 
 //== Scaffolding
@@ -142,7 +143,7 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              @text-color;
-@btn-default-bg:                 @gray;
+@btn-default-bg:                 @brand-info;
 @btn-default-border:             @btn-default-bg;
 
 @btn-primary-color:              #fff;
@@ -211,6 +212,8 @@
 
 //** Background for the dropdown menu.
 @dropdown-bg:                    #fff;
+//** Text color for dropdown items.
+@dropdown-color:                 #4D4D4D;
 //** Dropdown menu `border-color`.
 @dropdown-border:                rgba(0,0,0,.15);
 //** Dropdown menu `border-color` **for IE8**.
@@ -221,7 +224,7 @@
 //** Dropdown link text color.
 @dropdown-link-color:            @brand-primary;
 //** Hover color for dropdown links.
-@dropdown-link-hover-color:      #fff;
+@dropdown-link-hover-color:      darken(@brand-primary, 10%); 
 //** Hover background for dropdown links.
 @dropdown-link-hover-bg:         @dropdown-link-active-bg;
 
@@ -838,7 +841,7 @@
 //** Blockquote font size
 @blockquote-font-size:        16px;
 //** Blockquote border color
-@blockquote-border-color:     @gray;
+@blockquote-border-color:     #505050;
 //** Page header border color
 @page-header-border-color:    transparent;
 //** Width of horizontal description list titles

@@ -123,9 +123,13 @@
 
   .MenuItems,
   .FlyoutMenu {
-    color: @dropdown-link-color;
+    color: @dropdown-color;
     &:extend(.dropdown-menu-right);
     &:extend(.navbar-nav > li > .dropdown-menu);
+
+    .Item .Meta {
+      color: #626262;
+    }
   }
 
   .ToggleFlyout {

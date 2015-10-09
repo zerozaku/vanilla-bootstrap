@@ -60,6 +60,10 @@
 
 // Buttons ====================================================================
 
+.Buttons .Back .Bullet {
+  visibility: hidden;
+}
+
 .btn:active {
   .box-shadow(none);
 }
@@ -69,23 +73,23 @@
 }
 
 .PreviewButton {
-  background-color: @brand-danger;
-  border: 1px solid @brand-danger;
-}
+  background-color: @brand-info;
+  border: 1px solid @brand-info;
 
-.PreviewButton:hover {
-  background-color: darken(@brand-danger, 10%);
-  border: 1px solid darken(@brand-danger, 10%);
+  :hover, :active, :focus {
+    background-color: darken(@brand-info, 10%);
+    border: 1px solid darken(@brand-info, 10%);
+  }
 }
 
 .DraftButton {
-  background-color: @brand-info;
-  border: 1px solid @brand-info;
-}
+  background-color: @brand-save;
+  border: 1px solid @brand-save;
 
-.DraftButton:hover {
-  background-color: darken(@brand-info, 10%);
-  border: 1px solid darken(@brand-info, 10%);
+  :hover, :active, :focus {
+    background-color: darken(@brand-save, 10%);
+    border: 1px solid darken(@brand-save, 10%);
+  }
 }
 
 // Typography =================================================================
@@ -158,10 +162,6 @@ table,
 
 .page-sidebar .BigButton + .BigButton {
   margin-top: 10px;
-}
-
-.Button .Action {
-  background-color: @brand-info;
 }
 
 .search-form {
