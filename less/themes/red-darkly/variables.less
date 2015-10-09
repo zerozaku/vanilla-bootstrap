@@ -7,14 +7,15 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            #292929; // main background color
-@gray-dark:              #333333; // inner color
-@gray:                   #2D2D2D; // border color and bottom of submission box
-@gray-light:             #999;    // icon colors and such
-@gray-lighter:           #EBEBEB; // #eee
+@gray-darker:           #292929; // main background color
+@gray-dark:             #333333; // inner color
+@gray:                  #2D2D2D; // border color and bottom of submission box
+@gray-light:            #999;    // icon colors and such
+@gray-lighter:          #EBEBEB; // #eee
 
+@brand-main:            #9F2D2D; // main red
 @brand-primary:         #9E3232; // old blue default: #375a7f;
-@brand-success:         #9F2D2D; // main red
+@brand-success:         @brand-main; 
 @brand-save:            #66905B; // added this in as a green placeholder
 @brand-info:            #316C93; // includes announcement color
 @brand-warning:         #F39C12;
@@ -853,5 +854,5 @@
 // Page Footer
 
 @page-footer-color:           #FFF;
-@page-footer-bg:              @brand-primary;
-@page-footer-border:          @brand-primary;
+@page-footer-bg:              @brand-main;
+@page-footer-border:          @brand-main;
