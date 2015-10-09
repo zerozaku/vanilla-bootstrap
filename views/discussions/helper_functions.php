@@ -187,10 +187,10 @@ function WriteDiscussion($Discussion, &$Sender, &$Session) {
             $Sender->FireEvent('AfterCountMeta');
 
             if ($Discussion->LastCommentID != '') {
-               echo ' <span class="MItem LastCommentBy">'.sprintf(T('Most recent by %1$s'), UserAnchor($Last)).'</span> ';
+               echo ' <span class="MItem LastCommentBy">'.sprintf(T('Most recent by %2$s %1$s'), UserAnchor($Last), UserPhoto($First, array('Size' => 'Small'))).'</span> ';
                echo ' <span class="MItem LastCommentDate">'.Gdn_Format::Date($Discussion->LastDate, 'html').'</span>';
             } else {
-               echo ' <span class="MItem LastCommentBy">'.sprintf(T('Started by %1$s'), UserAnchor($First)).'</span> ';
+               echo ' <span class="MItem LastCommentBy">'.sprintf(T('Started by %2$s %1$s'), UserAnchor($First), UserPhoto($First, array('Size' => 'Small'))).'</span> ';
                echo ' <span class="MItem LastCommentDate">'.Gdn_Format::Date($Discussion->FirstDate, 'html');
                
                if ($Source = GetValue('Source', $Discussion)) {
