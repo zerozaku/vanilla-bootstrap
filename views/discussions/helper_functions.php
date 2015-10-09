@@ -128,8 +128,16 @@ function WriteDiscussion($Discussion, &$Sender, &$Session) {
       
    $Discussion->CountPages = ceil($Discussion->CountComments / $Sender->CountCommentsPerPage);
 
+   /*
    if ($Session->UserID && $Discussion->CountPages > 1) {
       $DiscussionUrl .= '#latest';
+   }
+   */
+
+   if ($Session->UserID) {
+      if($Discussion->CountUnreadComments > 0 || $Discussion->CountPages > 1) {
+         $DiscussionUrl .= '#latest';
+      }
    }
 ?>
 <li id="Discussion_<?php echo $Discussion->DiscussionID; ?>" class="<?php echo $CssClass; ?>">
