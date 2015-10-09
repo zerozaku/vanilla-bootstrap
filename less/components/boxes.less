@@ -127,6 +127,14 @@
     &:extend(.dropdown-menu-right);
     &:extend(.navbar-nav > li > .dropdown-menu);
 
+    li > a {
+      color: @dropdown-color;
+
+      &:hover, &:focus, &:active {
+        color: @dropdown-color;
+      }
+    }
+
     .Item .Meta {
       color: #626262;
     }
