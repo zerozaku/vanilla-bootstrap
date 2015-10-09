@@ -7,9 +7,10 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
+@gray-darkest:          #1D1D1D; // label gray
 @gray-darker:           #292929; // main background color
 @gray-dark:             #333333; // inner color
-@gray:                  #1D1D1D; // border color and bottom of submission box
+@gray:                  #2D2D2D; // border color and bottom of submission box
 @gray-light:            #999;    // icon colors and such
 @gray-lighter:          #EBEBEB; // #eee
 
@@ -215,6 +216,8 @@
 @dropdown-bg:                    #fff;
 //** Text color for dropdown items.
 @dropdown-color:                 #4D4D4D;
+//** Hover color for dropdown items.
+@dropdown-hover-color:           #FFF;
 //** Dropdown menu `border-color`.
 @dropdown-border:                rgba(0,0,0,.15);
 //** Dropdown menu `border-color` **for IE8**.
@@ -551,7 +554,7 @@
 //##
 
 //** Default label background color
-@label-default-bg:            @gray;
+@label-default-bg:            @gray-darkest;
 //** Primary label background color
 @label-primary-bg:            @brand-primary;
 //** Success label background color
