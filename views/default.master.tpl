@@ -3,6 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function scm_controller() {
+        var button = document.getElementById("scm-button");
+        var text = button.innerText || button.textContent;
+        if (text == "Play") {
+          SCM.play();
+          button.innerText = "Pause";
+        } else if (text == "Pause") {
+          SCM.pause();
+          button.innerText = "Play";
+        }
+      }
+    </script>
     {asset name="Head"}
   </head>
   <body id="{$BodyID}" class="{$BodyClass} sticky-footer-body">
@@ -47,6 +61,10 @@
     </nav>
 
     <section class="container">
+      <div class="scm-controller" style="visibility: hidden;">
+        <button id="scm-button" class="Button Primary Action NewDiscussion" type="submit" onclick="scm_controller()">Pause</button>
+      </div>
+
       <div class="row">
 
         <main class="page-content" role="main">
