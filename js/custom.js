@@ -6,13 +6,11 @@ return d[n]||(c.insertRule("@"+l+"keyframes "+n+"{0%{opacity:"+r+"}"+s+"%{opacit
   heap.load("2129789879");
 
 function scm_controller() {
-  var button = document.getElementById("scm-button");
-  var text = button.innerText || button.textContent;
-  if (text == "Play") {
+  if ($("#scm-button i").hasClass("fa-play")) {
     SCM.play();
-    button.innerText = "Pause";
-  } else if (text == "Pause") {
+    $("#scm-button i").removeClass("fa-pause").addClass("fa-play");
+  } else if ($("#scm-button i").hasClass("fa-pause")) {
     SCM.pause();
-    button.innerText = "Play";
+    $("#scm-button i").removeClass("fa-play").addClass("fa-pause");
   }
 }
