@@ -9,11 +9,11 @@ function scm_controller() {
   console.log("button pressed");
   if ($("#scm-button i").hasClass("fa-play")) {
     SCM.play();
-    $("#scm-button i").removeClass("fa-pause").addClass("fa-play");
-    console.log("paused");
+    $("#scm-button i").removeClass("fa-play").addClass("fa-pause");
+    console.log("playing");
   } else if ($("#scm-button i").hasClass("fa-pause")) {
     SCM.pause();
-    $("#scm-button i").removeClass("fa-play").addClass("fa-pause");
-    console.log("played");
+    $("#scm-button i").removeClass("fa-pause").addClass("fa-play");
+    console.log("paused");
   }
 }
