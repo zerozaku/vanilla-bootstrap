@@ -49,7 +49,7 @@
 
     <section class="container">
       <div class="scm-controller" style="visibility: hidden;">
-        <button id="scm-button" class="Button Primary Action NewDiscussion" type="submit" onclick="scm_controller()">Pause</button>
+        <button id="scm-button" class="Button Primary Action NewDiscussion" type="submit" onclick="scm_controller()"><i class="fa fa-pause"></i></button>
       </div>
 
       <div class="row">
