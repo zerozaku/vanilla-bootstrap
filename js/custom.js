@@ -6,11 +6,14 @@ return d[n]||(c.insertRule("@"+l+"keyframes "+n+"{0%{opacity:"+r+"}"+s+"%{opacit
   heap.load("2129789879");
 
 function scm_controller() {
+  console.log("button pressed");
   if ($("#scm-button i").hasClass("fa-play")) {
     SCM.play();
     $("#scm-button i").removeClass("fa-pause").addClass("fa-play");
+    console.log("paused");
   } else if ($("#scm-button i").hasClass("fa-pause")) {
     SCM.pause();
     $("#scm-button i").removeClass("fa-play").addClass("fa-pause");
+    console.log("played");
   }
 }
