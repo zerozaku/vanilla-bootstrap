@@ -26,10 +26,6 @@ body {
   background-image: url("/uploads/spookfest2015/background.png");
 }
 
-.scm-controller {
-  visibility: show;  
-}
-
 .page-content {
   margin-bottom: 20px;
 }
@@ -40,14 +36,15 @@ body {
   }
 }
 
-.MessageForm .Buttons {
-  background-color: @gray-darkest;
-}
-
 .CategoryBox {
   .MorePager {
     background-color: @gray-darkest;
   }
+}
+
+// Spoilers (plugin override) =================================================
+.UserSpoiler {
+  background-color: #C26D38 !important;
 }
 
 // Navbar =====================================================================
@@ -202,7 +199,7 @@ table,
   
   .Buttons {
     border-radius: 0px;
-    background-color: #1D1D1D;
+    background-color: @gray-darkest;
     padding: 15px;
   }
 }
@@ -422,5 +419,9 @@ textarea {
 
 // Categories page ============================================================
 .MorePager {
+  background-color: @gray-darkest;
+}
+
+.PanelCategories a:hover {
   background-color: @gray-darkest;
 }
