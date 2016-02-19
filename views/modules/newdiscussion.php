@@ -19,13 +19,18 @@ if ($this->QueryString) {
 }
 $Css = 'Button Primary Action NewDiscussion';
 $Css .= strpos($this->CssClass, 'Big') !== FALSE ? ' BigButton' : '';
-if (count($this->Buttons) == 0) {
+
+// removing this so that there aren't multiple new discussion buttons
+/* if (count($this->Buttons) == 0) {
    echo Anchor($Text, $Url, $Css);
 } else {
    // Make the core button action be the first item in the button group.
    array_unshift($this->Buttons, array('Text' => $Text, 'Url' => $Url));
    echo ButtonGroup($this->Buttons, $this->CssClass, $this->DefaultButton);
-}
+} */
+
+echo Anchor($Text, $Url, $Css);
+
 Gdn::Controller()->FireEvent('AfterNewDiscussionButton');
 
 echo '</div>';
