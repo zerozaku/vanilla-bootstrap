@@ -34,7 +34,12 @@
   }
 
   img {
-    .img-responsive(inline-block);
+    // .img-responsive(inline-block);
+    // below is the same thing without height: auto
+    
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
   }
 
   .emoji {
@@ -56,10 +61,16 @@ h1.H {
   display: none;
 }
 
+// Editor 
+.editor-dropdown .MenuItems a {
+  padding: 5px !important;
+}
+
+
 // Blockquotes
 blockquote {
-  font-size: @blockquote-font-size;
-  margin: 15px 0px 15px;
-  background-color: #222;
-  padding: 15px 22px;
+  font-size: @blockquote-font-size !important;
+  margin: 15px 0px 15px !important;
+  background-color: #222 !important;
+  padding: 15px 22px !important;
 }

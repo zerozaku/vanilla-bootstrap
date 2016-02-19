@@ -5,6 +5,8 @@
 
 .MenuItems {
   &:extend(.dropdown-menu);
+  // .dropdown-menu uses 5px 0 padding and it messes things up
+  padding: 5px !important;
 
   ul {
     padding: 0;
