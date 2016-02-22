@@ -13,7 +13,8 @@ $ThemeInfo['bootstrap'] = array(
 
   'Options' => array(
     'Styles' => array(
-      'Default'   => '%s_default',
+      //'Default'   => '%s_default',
+      'Default'   => '%s_red-darkly',
       'Bootstrap' => '%s_bootstrap',
       'Cosmo'     => '%s_cosmo',
       'Darkly'    => '%s_darkly',
