@@ -109,7 +109,7 @@
   .pull-right(); // Right-align profile buttons
 }
 
-.ChangePic a, .ProfileOpts a {
+.ChangePic a, .ProfileOpts .NavButton {
   padding: 5px;
   font-size: 13px;
   border-radius: 3px;
@@ -120,33 +120,23 @@
   display: inline-block;
   height: 40px;
   margin-top: 5px;
+  color: @btn-primary-color;
 }
 
 .ChangePic, .ProfileOpts {
   display: inline-block;
 }
 
-@media screen and (min-device-width: 750px) and (max-width: @container-tablet) {
-  .ChangePic, .ProfileOpts a {
+@media screen and (min-device-width: 750px) and (max-width: 817) {
+  .ChangePic a, .ProfileOpts .NavButton {
     margin-left: 40px;
   }
-}
-
-.ChangePic a {
-  color: @btn-primary-color;
 }
 
 .ProfileButtons {
   max-width:225px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.ProfileOpts .NavButton {
-  color: @btn-primary-color;
-  /*padding: 0px;
-  font-size: 13px;
-  line-height: 0;*/
 }
 
 // Social buttons
