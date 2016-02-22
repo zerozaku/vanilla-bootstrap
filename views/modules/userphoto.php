@@ -21,23 +21,25 @@ if ($Photo) {
         echo $Img;
         ?>
     </div>
-    <div id="ChangePic">
-        <?php
-        if (!$User->Banned && c('Garden.Profile.EditPhotos', true) && (Gdn::session()->UserID == $User->UserID || Gdn::session()->checkPermission('Garden.Users.Edit')))
-            echo anchor(Wrap(t('Change Picture')), '/profile/picture?userid='.$User->UserID, 'ChangePicture');
-        ?>
-    </div>
-    <div class="ProfileOptions">
-        <?php
-        $Controller = Gdn::controller();
-        $Controller->fireEvent('BeforeProfileOptions');
-        echo ButtonGroup($Controller->EventArguments['MemberOptions'], 'NavButton MemberButtons');
-        echo ' ';
-        echo ButtonDropDown($Controller->EventArguments['ProfileOptions'],
-            'NavButton ProfileButtons Button-EditProfile',
-            sprite('SpEditProfile', 'Sprite16').' <span class="Hidden">'.t('Edit Profile').'</span>'
-        );
-        ?>
+    <div id="ProfileButtons">
+        <div id="ChangePic">
+            <?php
+            if (!$User->Banned && c('Garden.Profile.EditPhotos', true) && (Gdn::session()->UserID == $User->UserID || Gdn::session()->checkPermission('Garden.Users.Edit')))
+                echo anchor(Wrap(t('Change Picture')), '/profile/picture?userid='.$User->UserID, 'ChangePicture');
+            ?>
+        </div>
+        <div class="ProfileOptions">
+            <?php
+            $Controller = Gdn::controller();
+            $Controller->fireEvent('BeforeProfileOptions');
+            echo ButtonGroup($Controller->EventArguments['MemberOptions'], 'NavButton MemberButtons');
+            echo ' ';
+            echo ButtonDropDown($Controller->EventArguments['ProfileOptions'],
+                'NavButton ProfileButtons Button-EditProfile',
+                sprite('SpEditProfile', 'Sprite16').' <span class="Hidden">'.t('Edit Profile').'</span>'
+            );
+            ?>
+        </div>
     </div>
 <?php } else if ($User->UserID == Gdn::session()->UserID || Gdn::session()->checkPermission('Garden.Users.Edit')) { ?>
     <div
