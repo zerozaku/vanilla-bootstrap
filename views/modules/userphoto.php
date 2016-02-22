@@ -28,7 +28,7 @@ if ($Photo) {
                 echo anchor(Wrap(t('Change Picture')), '/profile/picture?userid='.$User->UserID, 'ChangePicture');
             ?>
         </div>
-        <div class="ProfileOptions">
+        <div class="ProfileOpts">
             <?php
             $Controller = Gdn::controller();
             $Controller->fireEvent('BeforeProfileOptions');
