@@ -48,7 +48,8 @@
     </nav>
 
     <section class="container">
-      <div class="scm-controller" style="visibility: hidden;">
+      <!-- <div class="scm-controller" style="visibility: hidden;"> -->
+      <div class="scm-controller" style="display: none;">
         <button id="scm-button" class="Button Primary Action NewDiscussion" type="submit" onclick="scm_controller()"><i class="fa fa-pause"></i></button>
       </div>
 
