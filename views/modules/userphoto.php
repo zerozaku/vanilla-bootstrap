@@ -22,12 +22,17 @@ if ($Photo) {
         ?>
     </div>
     <div class="ProfileButtons">
+        <?php
+        if (!$User->Banned && c('Garden.Profile.EditPhotos', true) && (Gdn::session()->UserID == $User->UserID || Gdn::session()->checkPermission('Garden.Users.Edit'))) {
+        ?>
         <div class="ChangePic">
             <?php
-            if (!$User->Banned && c('Garden.Profile.EditPhotos', true) && (Gdn::session()->UserID == $User->UserID || Gdn::session()->checkPermission('Garden.Users.Edit')))
                 echo anchor(Wrap(t('Change Picture')), '/profile/picture?userid='.$User->UserID, 'ChangePicture');
             ?>
         </div>
+        <?php 
+        }
+        ?>
         <div class="ProfileOpts">
             <?php
             $Controller = Gdn::controller();
