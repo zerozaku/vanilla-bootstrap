@@ -109,7 +109,7 @@
   .pull-right(); // Right-align profile buttons
 }
 
-.ChangePic, .ProfileOpts {
+.ChangePic, .ProfileOpts a {
   padding: 5px;
   font-size: 13px;
   border-radius: 3px;
@@ -119,6 +119,13 @@
   width: 110px;
   display: inline-block;
   height: 40px;
+  margin-top: 5px;
+}
+
+@media screen and (min-device-width: 750px) and (max-width: @container-tablet) {
+  .ChangePic, .ProfileOpts a {
+    margin-left: 40px;
+  }
 }
 
 .ChangePic a {
