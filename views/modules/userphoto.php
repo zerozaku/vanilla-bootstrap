@@ -23,7 +23,7 @@ if ($Photo) {
     </div>
     <div class="ProfileUsername">
         <?php
-        echo htmlspecialchars($this->User->Name);
+        echo htmlspecialchars($User->Name);
         echo '<span class="Gloss">';
         Gdn_Theme::BulletRow();
         if ($this->User->Title) {
